@@ -1,10 +1,12 @@
+#!/usr/bin/env node
+
 var http = require("http"),
     url = require("url"),
     path = require("path"),
     fs = require("fs"),
     port = process.argv[2] || 8888;
 
-var html = fs.readFileSync("index.html", "utf8");
+var html = fs.readFileSync(path.join(__dirname, "index.html"), "utf8");
 
 var redirects = [
   { shortcut: "shan", url: "http://shancarter.com" }
