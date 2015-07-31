@@ -1,0 +1,25 @@
+{
+  "name": "signpost",
+  "version": "0.1.0",
+  "description": "A simple redirect server that allows you to create easy to remember shortcuts to often used, but hard to remember URLs",
+  "main": "signpost.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shancarter/signpost.git"
+  },
+  "keywords": [
+    "redirect"
+  ],
+  "author": "Shan Carter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shancarter/signpost/issues"
+  },
+  "homepage": "https://github.com/shancarter/signpost#readme",
+  "scripts": {
+    "server": "node signpost.js"
+  }
+}
