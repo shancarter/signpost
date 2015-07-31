@@ -19,21 +19,15 @@ redirects.forEach(function(redirect) {
 html += "</ul>";
 
 http.createServer(function(request, response) {
-
   var shortcut = url.parse(request.url).pathname.slice(1);
 
-  console.log(shortcut);
-
   if (redirectsByShortcut[shortcut]) {
-    response.writeHead(302, {
-      "Location": redirectsByShortcut[shortcut].url
-    });
+    response.writeHead(302, { "Location": redirectsByShortcut[shortcut].url });
   } else {
     response.writeHead(200);
     response.write(html, "utf8");
   }
   response.end();
-
 }).listen(parseInt(port, 10));
 
 console.log("File server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
