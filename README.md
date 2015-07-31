@@ -1,2 +1,2 @@
 # signpost
-Work somewhere where all the companies services and URLs are hard to remember? This app is for you.
+A simple redirect server that allows you to create easy to remember shortcuts to often used, but hard to remember URLs.
